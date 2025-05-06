@@ -3,7 +3,7 @@ import "./App.css";
 
 function NavBar() {
 
-  return <header className="sticky top-0 h-[200px] bg-white">
+  return <header className="sticky top-0 bg-white">
     <div>
       <img src="/assets/main-logo.png" alt="main logo" />
     </div>
