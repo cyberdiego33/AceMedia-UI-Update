@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 
 function NavBar() {
-  const [count, setCount] = useState(0);
 
   return <header className="sticky top-0 h-[200px] bg-white">
     <div>
