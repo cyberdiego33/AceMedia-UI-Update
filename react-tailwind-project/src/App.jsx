@@ -14,6 +14,8 @@ function NavBar() {
 function BodyChat() {
   return (
     <p>
+
+      
     </p>
   );
 }
