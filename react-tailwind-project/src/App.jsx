@@ -15,19 +15,47 @@ function NavBar() {
   );
 }
 
+function ChatCard() {
+  return (
+    <div className="relative w-[200px] p-3 bg-blue-600">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi
+      numquam hic, magni nemo necessitatibus, nobis, debitis enim fugiat laborum
+      aspernatur placeat praesentium porro maiores omnis est! Beatae, omnis
+      magni.
+    </div>
+  );
+}
+
 function BodyChat() {
-  return <p></p>;
+  return (
+    <div className="p-4">
+      <ChatCard />
+    </div>
+  );
+}
+
+function startApp() {
+  const message = document.querySelector("input").value;
+  alert(`${message}`);
 }
 
 function InputArea() {
   return (
     <div className="bg-white p-4 border-t border-gray-200 flex items-center space-x-2 absolute bottom-0 inset-x-0">
-      <input className="input-area flex-1 p-2 border border-gray-300 rounded-full outline-none" type="text" placeholder="Type a message" />
-      <button className="send-btn bg-purple-500 hover:bg-purple-600 p-2 rounded-md transition-colors text-white">Send</button>
+      <input
+        className="input-area flex-1 p-2 border border-gray-300 rounded-full outline-none"
+        type="text"
+        placeholder="Type a message"
+      />
+      <button
+        className="send-btn bg-purple-500 hover:bg-purple-600 p-2 rounded-md transition-colors text-white"
+        onClick={startApp}
+      >
+        Send
+      </button>
     </div>
   );
 }
-
 
 export default NavBar;
 export { BodyChat, InputArea };
